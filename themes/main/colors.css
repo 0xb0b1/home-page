@@ -1,0 +1,57 @@
+
+body {
+    background: #212121;
+}
+
+.name-highlight {
+    color: #FFFFFF;
+}
+
+main {
+    background-color: #282A2E;
+    border-color: #373B41;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-shadow: 3px 3px 3px black;
+    text-align: right;
+}
+
+.subtitle {
+    color: #FFF;
+}
+
+.searchBar {
+    color: rgba(0,0,0,0);
+    border-color: lightgrey;
+}
+.searchBar:hover {
+    box-shadow: 0 0 5px #FFF;
+    border-color: #FFF;
+}
+
+.searchBar::-webkit-input-placeholder { color: rgba(0,0,0,0); }
+.searchBar:-moz-placeholder           { color: rgba(0,0,0,0); opacity: 1; }
+.searchBar::-moz-placeholder          { color: rgba(0,0,0,0); opacity: 1; }
+.searchBar:-ms-input-placeholder      { color: rgba(0,0,0,0); }
+
+.searchBar:focus::-webkit-input-placeholder { color: rgba(100,100,100,1); }
+.searchBar:focus:-moz-placeholder           { color: rgba(100,100,100,1); opacity: 1; }
+.searchBar:focus::-moz-placeholder          { color: rgba(100,100,100,1); opacity: 1; }
+.searchBar:focus:-ms-input-placeholder      { color: rgba(100,100,100,1); }
+
+.searchBar:focus {
+    color: rgba(100,100,100,1);
+}
+
+.search_duckduckgo{
+    background-image: url('images/icons/duckduckgo.svg');
+}
+.search_youtube {
+    background-image: url('images/icons/youtube.svg');
+}
+.search_github{
+    background-image: url('images/icons/github.svg');
+}
+
