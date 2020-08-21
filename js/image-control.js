@@ -16,6 +16,12 @@ function setMascot(wallpaper) {
   $('main').removeClass("plain");
 }
 
+ function removeWallpaper() {
+  $('main').removeClass("wallpaper");
+  $('main').css("background-image", "");
+  $('main').addClass("plain");
+ }
+
 
 $(document).ready(function(event) {
   var wallpaperEnable    = true;
@@ -23,7 +29,10 @@ $(document).ready(function(event) {
   var wallpaper = wallpaperPath;
   var wallpaperMinWidth  = 800;
 
-  setMascot(wallpaper);
-  controlMascot(wallpaper, wallpaperMinWidth);
-
+  if (wallpaperEnable) {
+    setMascot(wallpaper);
+    controlMascot(wallpaper, wallpaperMinWidth);
+  } else { 
+    removeWallpaper(); 
+  }
 });
